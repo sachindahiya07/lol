@@ -16,8 +16,12 @@ while ($row=mysqli_fetch_array($ret)) {
             <tr>
             
              <td style="font-weight:bold;"><?php echo $row['trackingid'];?></td>
-              <a href="invoice/generate_pdf.php?id=<?php echo $row['id'];?>">
-              
+             <td> <a href="invoice/generate_pdf.php?id=<?php echo $row['trackingid'];?>">Generate</a></td>
+	     </tr>
+<?php
+
+}
+?>
               </table>
               
               --------------------------------------------------------------------------------------------------------
@@ -28,6 +32,15 @@ require('fpdf.php');
 $con=mysqli_connect('localhost','root','');
 mysqli_select_db($con,'lexipressdb');
 $id=$_GET['id'];
+
+// please first echo and check the id value
+
+echo $id; exit;
+
+// if you get the id on clicking generate link then comment the above line and enjoy 
+
+
+
 
 class PDF extends FPDF {
 	function Header(){
