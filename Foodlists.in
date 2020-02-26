@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Foodlists.in</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+	
+	.first-container{
+	
+	 width:100%;
+	 height:60px;
+	 text-align:center;
+	 background-color:#CB202D;
+	}
+	
+	.second-container{
+	
+	width:100%;
+	height:100px;
+	background-color:#F3F3F3;
+	border-top:0.5px solid #e6e7e8;
+	border-bottom:0.5px solid #e6e7e8;
+	
+	}
+	
+	/* enable absolute positioning */
+	.inner-addon { 
+		position: relative; 
+	}
+
+	/* style icon */
+	.inner-addon .fa {
+	  position: absolute;
+	  padding: 10px;
+	  padding-right:20px;
+	  pointer-events: none;
+	}
+
+	/* align icon */
+	.left-addon .fa  { left:  0px;}
+	
+
+	/* add padding  */
+	.left-addon input  {padding-left:50px;}
+	
+	
+	.jumbotron{
+	
+	background-image: url("pizza_img3.jpg");
+    background-size:;
+	width:100%;
+	padding-top:10px;
+	background-color:#EBECED;
+	height:1650px;
+	opacity
+	
+	}
+	
+	jumbotron.img{
+	
+	opacity:0.5;
+	
+	}
+	
+	.res1-container{
+	
+	
+	background-color:white;
+	height:141px;
+	margin-left:250px;
+	margin-right:290px;
+	border-radius:5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+	}
+	
+	.footer{
+	
+	background-color:#293339;
+	height:400px;
+	
+	
+	}
+	
+	.copyright-container{
+	
+	background-color:#37454D;
+	height:130px;
+	
+	
+	}  
+	
+	nav ul {
+		  margin: 0;
+		  padding: 0;
+		  list-style: none;
+		  position: relative;
+		  float: right;
+		  background:
+		  border-bottom: 1px solid #fff;
+		  border-radius: 3px;    
+		}
+
+		nav li {
+		  float: left;          
+		}
+
+		nav #login {
+		
+		  box-shadow: 1px 0 0 #fff;  
+		}
+
+		nav #login-trigger,
+		nav #signup a {
+		  display: inline-block;
+		  *display: inline;
+		  *zoom: 1;
+		  height: 25px;
+		  line-height: 25px;
+		  padding: 0 8px;
+		  text-decoration: none;
+		  color: #444;
+		  text-shadow: 0 1px 0 #fff; 
+		}
+
+		nav #signup a {
+		  border-radius: 0 3px 3px 0;
+		}
+
+		nav #login-trigger {
+		  border-radius: 3px 0 0 3px;
+		}
+
+		nav #login-trigger:hover,
+		nav #login .active,
+		nav #signup a:hover {
+		  
+		}
+
+		nav #login-content {
+		  display: none;
+		  position: absolute;
+		  top: 10px;
+		  right: 0;
+		  z-index: 999;    
+		  background: #fff;
+		  background-image: linear-gradient(top, #fff, #eee);  
+		  padding: 15px;
+		  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+		  border-radius: 3px 0 3px 3px;
+		}
+
+		nav li #login-content {
+		  right: 0;
+		  width: 290px;  
+		}
+
+		/*--------------------*/
+
+		#inputs input {
+		  background: #f1f1f1;
+		  padding: 6px 5px;
+		  margin: 0 0 5px 0;
+		  width: 238px;
+		  border: 1px solid #ccc;
+		  border-radius: 3px;
+		  box-shadow: 0 1px 1px #ccc inset;
+		}
+
+		#inputs input:focus {
+		  background-color: #fff;
+		  border-color: #e8c291;
+		  outline: none;
+		  box-shadow: 0 0 0 1px #e8c291 inset;
+		}
+
+		/*--------------------*/
+
+		#login #actions {
+		  margin: 10px 0 0 0;
+		}
+
+		#login #submit {    
+		  background-color: #d14545;
+		  background-image: linear-gradient(top, #e97171, #d14545);
+		  -moz-border-radius: 3px;
+		  -webkit-border-radius: 3px;
+		  border-radius: 3px;
+		  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+		  border: 1px solid #7e1515;
+		  float: left;
+		  height: 30px;
+		  padding: 0;
+		  width: 100px;
+		  cursor: pointer;
+		  font: bold 14px Arial, Helvetica;
+		  color: #fff;
+		  
+		}
+
+		#login #submit:hover,
+		#login #submit:focus {    
+		  background-color: #e97171;
+		  background-image: linear-gradient(top, #d14545, #e97171);
+		} 
+
+		#login #submit:active {   
+		  outline: none;
+		  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+		}
+
+		#login #submit::-moz-focus-inner {
+		  border: none;
+		}
+
+		#login label {
+		  float: right;
+		  line-height: 30px;
+		 
+		}
+
+		#login label input {
+		  position: relative;
+		  top: 2px;
+		  right: 2px;
+		}
+	    
+		nav #signup {
+		
+		  box-shadow: 1px 0 0 #fff;  
+		}
+
+		nav #signup-trigger,
+		nav #signup a {
+		  display: inline-block;
+		  *display: inline;
+		  *zoom: 1;
+		  height: 25px;
+		  line-height: 25px;
+		  padding: 0 8px;
+		  text-decoration: none;
+		  color: #444;
+		  text-shadow: 0 1px 0 #fff; 
+		}
+
+		nav #signup a {
+		  border-radius: 0 3px 3px 0;
+		}
+
+		nav #login-trigger {
+		  border-radius: 3px 0 0 3px;
+		}
+
+		nav #signup-trigger:hover,
+		nav #signup .active,
+		nav #signup a:hover {
+		  
+		}
+
+		nav #signup-content {
+		  display: none;
+		  position: absolute;
+		  top: 10px;
+		  right: 0;
+		  z-index: 999;    
+		  background: #fff;
+		  background-image: linear-gradient(top, #fff, #eee);  
+		  padding: 15px;
+		  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+		  border-radius: 3px 0 3px 3px;
+		}
+
+		nav li #signup-content {
+		  right: 0;
+		  width: 300px;  
+		}
+
+		/*--------------------*/
+
+		#inputs input {
+		  background: #f1f1f1;
+		  padding: 6px 5px;
+		  margin: 0 0 5px 0;
+		  width: 238px;
+		  border: 1px solid #ccc;
+		  border-radius: 3px;
+		  box-shadow: 0 1px 1px #ccc inset;
+		}
+
+		#inputs input:focus {
+		  background-color: #fff;
+		  border-color: #e8c291;
+		  outline: none;
+		  box-shadow: 0 0 0 1px #e8c291 inset;
+		}
+
+		/*--------------------*/
+
+		#signup #actions {
+		  margin: 10px 0 0 0;
+		}
+
+		#signup #submit {    
+		  background-color: #d14545;
+		  background-image: linear-gradient(top, #e97171, #d14545);
+		  -moz-border-radius: 3px;
+		  -webkit-border-radius: 3px;
+		  border-radius: 3px;
+		  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+		  border: 1px solid #7e1515;
+		  float: left;
+		  height: 30px;
+		  padding: 0;
+		  width: 100px;
+		  cursor: pointer;
+		  font: bold 14px Arial, Helvetica;
+		  color: #fff;
+		  
+		}
+
+		#signup #submit:hover,
+		#signup #submit:focus {    
+		  background-color: #e97171;
+		  background-image: linear-gradient(top, #d14545, #e97171);
+		} 
+
+		#signup #submit:active {   
+		  outline: none;
+		  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+		}
+
+		#signup #submit::-moz-focus-inner {
+		  border: none;
+		}
+
+		#signup label {
+		  float: right;
+		  line-height: 30px;
+		 
+		}
+
+		#signup label input {
+		  position: relative;
+		  top: 2px;
+		  right: 2px;
+		}
+		
+		.image{
+	 
+		 width:100%;
+		 opacity:0.7;
+		 
+		}
+	    
+		
+	</style>
+  </head>
+
+  <body>
+  
+      <div class="first-container">
+	    
+	     <h1 style="color:white;margin-top:10px;">Foodlists.in</h1>
+		  <nav>
+            <ul>
+              <li id="login">
+            <a id="login-trigger" href="#"><p style="color:white;float:right;margin-right:10px;margin-top:-45px;">
+              Log in <span>&#65088;</span></p>
+            </a>
+			
+           <div id="login-content">
+             <form>
+              <fieldset id="inputs">
+                <input id="username" type="email" name="Email" placeholder="Your email address" required>   
+                <input id="password" type="password" name="Password" placeholder="Password" required>
+              </fieldset>
+              <fieldset id="actions">
+               <input style="width:80px;margin-left:12px;" type="submit" id="submit" value="Log in">
+               <label><input style="margin-right:10px;" type="checkbox" checked="checked">Keep me signed in</label>
+              </fieldset>
+             </form>
+          </div>                     
+            </li>
+           <li id="signup">
+		   
+		    <a id="signup-trigger" href="#"><p style="color:white;float:right;margin-top:-45px;margin-right:60px;">Sign Up <span><i class="fa fa-lock"></i></span></p></a>        
+		   
+		   <div id="signup-content">
+             <form>
+              <fieldset id="inputs">
+                <input id="username" type="email" name="Email" placeholder="Your email address" required>   
+                <input id="password" type="password" name="Password" placeholder="Password" required>
+              </fieldset>
+              <fieldset id="actions">
+               <input style="width:110px;margin-left:70px;margin-top:10px;" type="submit" id="submit" value="Create Account">
+              
+              </fieldset>
+             </form>
+          </div>  
+		   
+		   </li>
+		    </ul>
+          </nav>
+		  
+	  </div>
+		  
+	    
+	  <div class="second-container">
+	  
+	     <div id="input-group" class="inner-addon left-addon" style="width:25%;margin-left:250px;padding-top:30px;">
+	   
+	         <i class="fa fa-location-arrow"></i>
+		 
+              <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+		   
+                 <option selected>&nbsp; &nbsp; &nbsp; Please type a location...</option>
+                 <option value="1">&nbsp; &nbsp; &nbsp;Siri Fort Road, New Delhi</option>
+			     <option value="2">&nbsp; &nbsp; &nbsp;Recent Locations</option>
+		  
+             </select>
+		 
+         </div> 
+	   
+	     <div id="input-group" class="inner-addon left-addon" style="width:31%;margin-left:642px;margin-top:-38px;">
+		
+	         <i class="fa fa-search"></i>
+		  
+              <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+		   
+                 <option selected>&nbsp; &nbsp; &nbsp; Search for restaurants...</option>
+                 <option value="1">&nbsp; &nbsp; &nbsp;Diggin</option>
+                 <option value="2">&nbsp; &nbsp; &nbsp;KFC</option>
+			  
+              </select>
+		   
+         </div>
+		
+	      <a href="file:///C:/Users/dahiy/Desktop/appjs/icontesting.html"><button style="border:none;background-color:#CB202D;height:38%;margin-right:290px;margin-top:-38px;width:105px;float:right;" type="submit" class="btn btn-primary">Search</button></a> 
+		  
+     </div>
+  
+    <div class="jumbotron">
+	   <div class="img"></div>
+	 
+	  <div class="res1-container">
+	  
+	     <a href="https://www.facebook.com/POMPDELHI/"><img style="height:140px;" src="res1_image.png"></a>
+	     <a href="https://www.facebook.com/POMPDELHI/" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">POMP - Pizza On My Plate</h2></a>
+		   
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Greater Kailash1 (GK1), New Delhi</p>
+		   
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 800</p>
+		      <a href="pag2.html"<p onclick="pageRedirect()" type="_blank" style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+			  
+		      <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+		     
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">10% off on all orders above &#x20B9; 600.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">NA</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+			 
+	       <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:green"><b>4.8/5</b></span> <span style="color:grey;font-size:90%">[1849 votes]</span><br>Swiggy Rating:  <span style="color:grey"><b>---</b></span></p>   
+	  
+	  </div>
+	
+	  <div style="margin-top:10px;"class="res1-container">
+	   <a href="#"><img style="border-radius:10px;padding:2px;width:151px;height:140px;" src="res2_image.png"></a>
+	     <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">Butter Chicken Company</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Greater Kailash1 (GK1), New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 500</p>
+		        <a href="page3.html"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+		      <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	       
+		     <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">11% off on all orders above &#x20B9; 300.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">50% off up to ₹100 on orders above ₹99 | Use coupon SWIGGYIT.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+		  
+		  <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:green"><b>4.5/5</b></span> <span style="color:grey;font-size:90%">[262 votes]</span><br>Swiggy Rating: <span style="color:#70d87e;"><b>4.1/5</b></span> <span style="color:grey;font-size:90%">[100+ votes]</span></p>   
+	  </div>
+	
+	  <div style="margin-top:10px;" class="res1-container">
+	   <a href="#"><img style="padding-top:2px;height:140px;" src="res3_image.png"></a>
+	     <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">Taco Bell</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Epicuria Food Mall, Nehru Place, New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 550</p>
+		        <a href="page4.html"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison<i class="fa fa-angle-down"></i></p></a>
+		       <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	         
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">No Offer.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">No Offer.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+			 
+		   <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:#70d87e;"><b>4.1/5</b></span> <span style="color:grey;font-size:90%">[1322 votes]</span><br>Swiggy Rating: <span style="color:#70d87e;"><b>4.2/5</b></span> <span style="color:grey;font-size:90%">[500+ votes]</span></p>   
+	  </div>
+	
+	  <div style="margin-top:10px;" class="res1-container">
+	     <a href="#"><img style="height:140px;" src="res4_image.png"></a>
+	     <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">Hunger Strike</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Greater Kailash1 (GK1), New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 300</p>
+		        <a href="page5.html"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+		       <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	         
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">No Offer.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">10% off on all orders.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+			 
+		   <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:#DB7C38;"><b>3.7/5</b></span> <span style="color:grey;font-size:90%">[542 votes]</span><br>Swiggy Rating: <span style="color:#DB7C38;"><b>3.8/5</b></span> <span style="color:grey;font-size:90%">[100+ votes]</span></p>   
+	  </div>
+	  
+	  <div style="margin-top:10px;" class="res1-container">
+	     <a href="#"><img style="width:153px;height:140px;" src="res5_image.png"></a>
+	      <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">Chidambaram's New Madras Hotel</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Lodhi Colony, New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 500</p>
+		        <a href="page6.html"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+		       <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	         
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">No Offer.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">40% off up to ₹100 on orders above ₹99 | Use coupon SWIGGYIT.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+			 
+		   <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:#70d87e;"><b>4.1/5</b></span> <span style="color:grey;font-size:90%">[735 votes]</span><br>Swiggy Rating: <span style="color:#70d87e;"><b>4.2/5</b></span> <span style="color:grey;font-size:90%">[1000+ votes]</span></p>   
+	  </div>
+	  
+	  <div style="margin-top:10px;" class="res1-container">
+	     <a href="#"><img style="height:140px;" src="res6_image.png"></a>
+	      <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">Rolls Mania</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Lajpat Nagar 1, New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 350</p>
+		        <a href="page7.html"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+		       <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	         
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">10% off on all orders above &#x20B9; 1.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">30% off up to ₹75 on orders above ₹99 | Use coupon SWIGGYIT.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+			 
+		   <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:green"><b>4.5/5</b></span> <span style="color:grey;font-size:90%">[122 votes]</span><br>Swiggy Rating: <span style="color:#DB7C38;"><b>3.7/5</b></span> <span style="color:grey;font-size:90%">[50+ votes]</span></p>   
+	  </div>
+	
+	  <div style="margin-top:10px;" class="res1-container">
+	     <a href="#"><img style="height:140px;" src="res7_image.png"></a>
+	      <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">Dunkin' Donuts</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Epicuria Food Mall, Nehru Place, New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 600</p>
+		        <a href="page8.html"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+		      <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	         
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">10% off on all orders above &#x20B9; 300.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">40% off up to ₹100 on orders above ₹99 | Use coupon SWIGGYIT.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+			 
+		   <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:#70d87e;"><b>4.0/5</b></span> <span style="color:grey;font-size:90%">[703 votes]</span><br>Swiggy Rating: <span style="color:#70d87e;"><b>4.1/5</b></span> <span style="color:grey;font-size:90%">[1000+ votes]</span></p>   
+	  </div>
+	  
+	  <div style="margin-top:10px;" class="res1-container">
+	     <a href="#"><img style="height:140px;" src="res8_image.png"></a>
+	      <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">KFC</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Central Market, Lajpat Nagar 2, New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 450</p>
+		        <a href="#"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+		      <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	         
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">No Offer.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">No Offer.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+			 
+		   <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:#DB7C38;"><b>3.7/5</b></span> <span style="color:grey;font-size:90%">[1030 votes]</span><br>Swiggy Rating: <span style="color:#70d87e;"><b>4.0/5</b></span> <span style="color:grey;font-size:90%">[500+ votes]</span></p>   
+	  </div>
+	
+	  <div style="margin-top:10px;" class="res1-container">
+	     <a href="#"><img style="height:140px;" src="res9_image.png"></a>
+	      <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">Salad Days</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: Malviya Nagar, New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 900</p>
+		        <a href="page9.html"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+		       <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	         
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">No Offer.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">No Offer.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+   
+		   <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:#70d87e;"><b>4.1/5</b></span> <span style="color:grey;font-size:90%">[1216 votes]</span><br>Swiggy Rating: <span style="color:green;"><b>4.6/5</b></span> <span style="color:grey;font-size:90%">[500+ votes]</span></p>   
+	  </div>
+	 
+	  <div style="margin-top:10px;" class="res1-container">
+	     <a href="#"><img style="padding-top:2px;height:140px;" src="res10_image.png"></a>
+	      <a href="#" style="text-decoration:none;"><h2 style="margin-top:-130px;padding-left:160px;color:#CB202D;font-size:22px;">Burger Singh - Big Punjabi Burgers</h2></a>
+	       <p style="padding-left:163px;color:grey;font-size:90%;"><i class="fa fa-map-marker"></i>&nbsp; Location: SDA Market, Hauz Khas, New Delhi</p>
+			  <p style="font-size:90%;float:right;margin-top:-70px;padding-right:10px;">Cost For Two: &#x20B9; 300</p>
+		        <a href="page10.html"<p style="font-size:90%;text-decoration:none;color:black;float:right;margin-top:-30px;padding-right:10px;">Price Comparison <i class="fa fa-angle-down"></i></p></a>
+		       <hr style="margin-top:-5px;margin-left:160px;margin-right:180px;">
+		     <button style="border:none;margin-right:10px;align:right;background-color:#CB202D;height:30%;width:120px;float:right;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">View Offers</button>
+	         
+			 <div style="background-color:#F3F3F3;width:60.5%;height:150px;margin-left:180px;margin-right:315px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 
+				  <p style="text-align:center;"><b>All deals for you</b></p> 
+					
+					<div class="card-group">
+					  <div class="card">
+						 <a href="#"><img src="zomato_logo.png" style="border-radius:50%;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Zomato - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">BOGO.</p>
+					        </div>
+					   </div>
+				  
+					  <div class="card">
+						 <a href="#"><img src="swiggy_logo.png" style="border-radius:50%;float:center;margin-left:160px;width:200px;height:150px;" class="card-img"></a>
+						    <div class="card-body">
+						   <a href="#"><h5 style="color:black;text-align:center;" class="card-title">Swiggy - Offers/Discounts</h5></a>
+						  <p style="text-align:center;" class="card-text">Add Fries @ Re 1.</p>
+						    </div>
+					  </div>
+				    </div>			
+			 </div>
+		   		   
+		   <p style="margin-top:-5px;padding-left:163px;font-size:90%;">Zomato Rating: <span style="color:#70d87e;"><b>4.1/5</b></span> <span style="color:grey;font-size:90%">[978 votes]</span><br>Swiggy Rating: <span style="color:#70d87e;"><b>4.0/5 </b></span> <span style="color:grey;font-size:90%">[500+ votes]</span></p>   
+	  </div>
+    
+      <hr style="margin-top:100px;margin-left:247px;margin-right:290px;">
+  
+    </div>
+	
+	<div class="footer">
+	  
+	  <p style="color:white;padding-top:40px;margin-left:250px;">Want to know exclusive offers on your orders? Subscribe to our newsletter!</p>
+	  
+	    <div style="margin-top:-45px;width:27%;margin-left:825px;" class="input-group mb-2">
+             
+			 <input type="emial" class="form-control" placeholder=" Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+		   
+             <div class="input-group-append">
+			 
+                 <button style="width:110px;background-color:#37454D;color:white;" class="btn btn-outline-secondary" type="button" id="button-addon2"><b>Subscribe</b></button>
+			  
+             </div>
+			 
+	    </div>
+	      
+		  <hr style="margin-top:30px;margin-left:247px;margin-right:286px;border: 1.5px solid #37454D;">	
+	   
+	    <h3 style="padding-top:20px;color:white;margin-left:250px;"> About</h3>
+	   
+	       <p style="padding-top:15px;color:white;margin-left:250px;"> Foodlists.in is India's first platform where you can compare<br>
+      		     the prices of more than 100+ cuisines offered by listed<br>
+				 restaurants on different third party online aggregators<br>
+				 (Zomato/Swiggy). Foodlist.com is built on customers need<br>
+				 to make a thoughtful and cost savvy decision while ordering<br>
+				 food online. Here you can compare the ratings, average cost and<br> offers/discounts offered by the restaurants on these aggregators.
+		   </p>
+		
+		<h3 style="text-align:right;margin-top:-240px;color:white;margin-right:620px;">Contact Us</h3>
+        
+		   <p style="padding-top:15px;text-align:right;color:white;margin-right:620px;">hello@foodlists.in</p>		
+		 
+		<h3 style="text-align:right;margin-top:-100px;color:white;margin-right:285px;">Follow us on</h3>
+		
+            <a href="#" target="_blank"><i style="margin-top:15px;margin-left:10px;float:right;margin-right:310px;border-radius: 50%;padding: 0.5em 0.6em;color:white;box-shadow: 0px 0px 2px white;" class="fa fa-twitter"></i></a>
+			<a href="#" target="_blank"><i style="margin-top:15px;margin-left:10px;float:right;border-radius: 50%;padding: 0.5em 0.6em;color:white;box-shadow: 0px 0px 2px white;" class="fa fa-facebook"></i></a>		
+			<a href="#" target="_blank"><i style="margin-top:15px;float:right;border-radius: 50%;padding: 0.5em 0.6em;color:white;box-shadow: 0px 0px 2px white;" class="fa fa-linkedin"></i></a><br><br>		
+			<a href="#" target="_blank"><i style="margin-right:330px;margin-top:10px;float:right;border-radius: 50%;padding: 0.5em 0.6em;color:white;box-shadow: 0px 0px 2px white;" class="fa fa-instagram"></i></a><br><br>
+		    <a href="#" target="_blank"><i style="margin-right:370px;margin-top:-37px;margin-left:10px;float:right;border-radius: 50%;padding: 0.5em 0.6em;color:white;box-shadow: 0px 0px 2px white;" class="fa fa-youtube"></i></a><br><br>
+	
+	</div>
+  
+    <div class="copyright-container">
+	
+	    <h3 style="font-size:30px;padding-top:25px;text-align:center;color:white"><b>Foodlists.in</b></h3>
+	    <p style="color:white;text-align:center;">Copyright ©2019 Foodlists.in. All rights reserved.</p>
+	   
+	</div>
+  
+  
+  
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	 <script type="text/javascript">
+	      
+		  $(document).ready(function(){
+		  $('#login-trigger').click(function(){
+			$(this).next('#login-content').slideToggle();
+			$(this).toggleClass('active');          
+			
+			if ($(this).hasClass('active')) $(this).find('span').html('&#65087;')
+			  else $(this).find('span').html('&#65088;')
+		  })
+	  
+	     });
+	    
+		
+		 $(document).ready(function(){
+		  $('#signup-trigger').click(function(){
+			$(this).next('#signup-content').slideToggle();
+			$(this).toggleClass('active');          
+			
+			if ($(this).hasClass('active')) $(this).find('span').html('&#xf09c;')
+			  else $(this).find('span').html('.&#xf09c;')
+		  })
+	  
+	     });
+		  
+		  
+	       function pageRedirect() {
+             window.location.href = "https://www.tutorialrepublic.com/";
+           
+		   }   
+	 
+	 </script>
+  </body>
+ 
+</html>
